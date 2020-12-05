@@ -1,0 +1,1384 @@
+Installing package into ‘/usr/lib64/R/library’
+(as ‘lib’ is unspecified)
+Warning in install.packages("tidyverse") :
+  'lib = "/usr/lib64/R/library"' is not writable
+Error in install.packages("tidyverse") : unable to install packages
+Execution halted
+Error: package or namespace load failed for ‘devtools’:
+ package ‘devtools’ was installed by an R version with different internals; it needs to be reinstalled for use with this R version
+Execution halted
+Installation failed: package ‘curl’ was installed by an R version with different internals; it needs to be reinstalled for use with this R version
+Error in library(tidyverse) : there is no package called ‘tidyverse’
+Execution halted
+Downloading GitHub repo hadley/tidyverse@master
+from URL https://api.github.com/repos/hadley/tidyverse/zipball/master
+Installing tidyverse
+trying URL 'https://mirror.its.sfu.ca/mirror/CRAN/src/contrib/broom_0.4.4.tar.gz'
+Content type 'application/x-gzip' length 1409358 bytes (1.3 MB)
+==================================================
+downloaded 1.3 MB
+
+Installing broom
+trying URL 'https://mirror.its.sfu.ca/mirror/CRAN/src/contrib/plyr_1.8.4.tar.gz'
+Content type 'application/x-gzip' length 392451 bytes (383 KB)
+==================================================
+downloaded 383 KB
+
+Installing plyr
+'/usr/lib64/R/bin/R' --no-site-file --no-environ --no-save --no-restore  \
+  --quiet CMD INSTALL '/tmp/RtmpaXqOXP/devtools7dd727a902dd/plyr'  \
+  --library='/zfs/users/asda12/asda12/R/x86_64-redhat-linux-gnu-library/3.5'  \
+  --install-tests 
+
+* installing *source* package ‘plyr’ ...
+** package ‘plyr’ successfully unpacked and MD5 sums checked
+** libs
+g++ -m64  -I"/usr/include/R" -DNDEBUG  -I"/zfs/users/asda12/asda12/R/x86_64-redhat-linux-gnu-library/3.5/Rcpp/include" -I/usr/local/include   -fpic  -O2 -g -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector-strong --param=ssp-buffer-size=4 -grecord-gcc-switches   -m64 -mtune=generic  -c RcppExports.cpp -o RcppExports.o
+gcc -m64 -std=gnu99 -I"/usr/include/R" -DNDEBUG  -I"/zfs/users/asda12/asda12/R/x86_64-redhat-linux-gnu-library/3.5/Rcpp/include" -I/usr/local/include   -fpic  -O2 -g -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector-strong --param=ssp-buffer-size=4 -grecord-gcc-switches   -m64 -mtune=generic  -c loop_apply.c -o loop_apply.o
+g++ -m64  -I"/usr/include/R" -DNDEBUG  -I"/zfs/users/asda12/asda12/R/x86_64-redhat-linux-gnu-library/3.5/Rcpp/include" -I/usr/local/include   -fpic  -O2 -g -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector-strong --param=ssp-buffer-size=4 -grecord-gcc-switches   -m64 -mtune=generic  -c split-numeric.cpp -o split-numeric.o
+g++ -m64 -shared -L/usr/lib64/R/lib -Wl,-z,relro -o plyr.so RcppExports.o loop_apply.o split-numeric.o -L/usr/lib64/R/lib -lR
+installing to /zfs/users/asda12/asda12/R/x86_64-redhat-linux-gnu-library/3.5/plyr/libs
+** R
+** data
+*** moving datasets to lazyload DB
+** inst
+** tests
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+  converting help for package ‘plyr’
+    finding HTML links ... done
+    a_ply                                   html  
+    aaply                                   html  
+    adply                                   html  
+    alply                                   html  
+    amv_dim                                 html  
+    amv_dimnames                            html  
+    arrange                                 html  
+    as.data.frame.function                  html  
+    as.list.split                           html  
+    as.quoted                               html  
+    baseball                                html  
+    colwise                                 html  
+    compact                                 html  
+    count                                   html  
+    create_progress_bar                     html  
+    d_ply                                   html  
+    daply                                   html  
+    ddply                                   html  
+    defaults                                html  
+    desc                                    html  
+    dims                                    html  
+    dlply                                   html  
+    each                                    html  
+    empty                                   html  
+    eval.quoted                             html  
+    failwith                                html  
+    get-split                               html  
+    here                                    html  
+    id                                      html  
+    id_var                                  html  
+    idata.frame                             html  
+    indexed_array                           html  
+    indexed_df                              html  
+    is.discrete                             html  
+    is.formula                              html  
+    isplit2                                 html  
+    join                                    html  
+    join.keys                               html  
+    join_all                                html  
+    l_ply                                   html  
+    laply                                   html  
+    ldply                                   html  
+    liply                                   html  
+    list_to_array                           html  
+    list_to_dataframe                       html  
+    list_to_vector                          html  
+    llply                                   html  
+    loop_apply                              html  
+    m_ply                                   html  
+    maply                                   html  
+    mapvalues                               html  
+    match_df                                html  
+    mdply                                   html  
+    mlply                                   html  
+    mutate                                  html  
+    name_rows                               html  
+    names.quoted                            html  
+    nunique                                 html  
+    ozone                                   html  
+    plyr-deprecated                         html  
+    plyr                                    html  
+    print.quoted                            html  
+    print.split                             html  
+    progress_none                           html  
+    progress_text                           html  
+    progress_time                           html  
+    progress_tk                             html  
+    progress_win                            html  
+    quickdf                                 html  
+    quoted                                  html  
+    r_ply                                   html  
+    raply                                   html  
+    rbind.fill                              html  
+    rbind.fill.matrix                       html  
+Rd warning: /tmp/RtmpaXqOXP/devtools7dd727a902dd/plyr/man/rbind.fill.matrix.Rd:51: file link ‘rbind’ in package ‘base’ does not exist and so has been treated as a topic
+    rdply                                   html  
+    reduce_dim                              html  
+    rename                                  html  
+    revalue                                 html  
+    rlply                                   html  
+    round_any                               html  
+    splat                                   html  
+    split_indices                           html  
+    split_labels                            html  
+    splitter_a                              html  
+    splitter_d                              html  
+    strip_splits                            html  
+    summarise                               html  
+    take                                    html  
+    true                                    html  
+    try_default                             html  
+    tryapply                                html  
+    unrowname                               html  
+    vaggregate                              html  
+** building package indices
+** testing if installed package can be loaded
+* DONE (plyr)
+trying URL 'https://mirror.its.sfu.ca/mirror/CRAN/src/contrib/reshape2_1.4.3.tar.gz'
+Content type 'application/x-gzip' length 36405 bytes (35 KB)
+==================================================
+downloaded 35 KB
+
+Installing reshape2
+'/usr/lib64/R/bin/R' --no-site-file --no-environ --no-save --no-restore  \
+  --quiet CMD INSTALL '/tmp/RtmpaXqOXP/devtools7dd71621b050/reshape2'  \
+  --library='/zfs/users/asda12/asda12/R/x86_64-redhat-linux-gnu-library/3.5'  \
+  --install-tests 
+
+* installing *source* package ‘reshape2’ ...
+** package ‘reshape2’ successfully unpacked and MD5 sums checked
+** libs
+g++ -m64  -I"/usr/include/R" -DNDEBUG  -I"/zfs/users/asda12/asda12/R/x86_64-redhat-linux-gnu-library/3.5/Rcpp/include" -I/usr/local/include   -fpic  -O2 -g -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector-strong --param=ssp-buffer-size=4 -grecord-gcc-switches   -m64 -mtune=generic  -c RcppExports.cpp -o RcppExports.o
+g++ -m64  -I"/usr/include/R" -DNDEBUG  -I"/zfs/users/asda12/asda12/R/x86_64-redhat-linux-gnu-library/3.5/Rcpp/include" -I/usr/local/include   -fpic  -O2 -g -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector-strong --param=ssp-buffer-size=4 -grecord-gcc-switches   -m64 -mtune=generic  -c melt.cpp -o melt.o
+g++ -m64 -shared -L/usr/lib64/R/lib -Wl,-z,relro -o reshape2.so RcppExports.o melt.o -L/usr/lib64/R/lib -lR
+installing to /zfs/users/asda12/asda12/R/x86_64-redhat-linux-gnu-library/3.5/reshape2/libs
+** R
+** data
+*** moving datasets to lazyload DB
+** inst
+** tests
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+  converting help for package ‘reshape2’
+    finding HTML links ... done
+    add_margins                             html  
+    cast                                    html  
+Rd warning: /tmp/RtmpaXqOXP/devtools7dd71621b050/reshape2/man/cast.Rd:61: file link ‘.’ in package ‘plyr’ does not exist and so has been treated as a topic
+    colsplit                                html  
+    french_fries                            html  
+    guess_value                             html  
+    margins                                 html  
+    melt                                    html  
+    melt.array                              html  
+    melt.data.frame                         html  
+    melt.default                            html  
+    melt.list                               html  
+    melt_check                              html  
+    parse_formula                           html  
+    recast                                  html  
+    smiths                                  html  
+    tips                                    html  
+** building package indices
+** testing if installed package can be loaded
+* DONE (reshape2)
+'/usr/lib64/R/bin/R' --no-site-file --no-environ --no-save --no-restore  \
+  --quiet CMD INSTALL '/tmp/RtmpaXqOXP/devtools7dd744863d7f/broom'  \
+  --library='/zfs/users/asda12/asda12/R/x86_64-redhat-linux-gnu-library/3.5'  \
+  --install-tests 
+
+* installing *source* package ‘broom’ ...
+** package ‘broom’ successfully unpacked and MD5 sums checked
+** R
+** inst
+** tests
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+  converting help for package ‘broom’
+    finding HTML links ... done
+    Arima_tidiers                           html  
+    aareg_tidiers                           html  
+    acf_tidiers                             html  
+    anova_tidiers                           html  
+    auc_tidiers                             html  
+    augment                                 html  
+    augment_columns                         html  
+    betareg_tidiers                         html  
+    biglm_tidiers                           html  
+    binDesign_tidiers                       html  
+    binWidth_tidiers                        html  
+    boot_tidiers                            html  
+    bootstrap                               html  
+    brms_tidiers                            html  
+    broom                                   html  
+    btergm_tidiers                          html  
+    cch_tidiers                             html  
+    compact                                 html  
+    confint.geeglm                          html  
+    confint_tidy                            html  
+    coxph_tidiers                           html  
+    cv.glmnet_tidiers                       html  
+    data.frame_tidiers                      html  
+    finding level-2 HTML links ... done
+
+    decompose_tidiers                       html  
+    emmeans_tidiers                         html  
+    ergm_tidiers                            html  
+    felm_tidiers                            html  
+    finish_glance                           html  
+    fitdistr_tidiers                        html  
+    fix_data_frame                          html  
+    gam_tidiers                             html  
+    gamlss_tidiers                          html  
+    geeglm_tidiers                          html  
+    glance                                  html  
+    glm_tidiers                             html  
+    glmnet_tidiers                          html  
+    gmm_tidiers                             html  
+    htest_tidiers                           html  
+    inflate                                 html  
+    insert_NAs                              html  
+    ivreg_tidiers                           html  
+    kappa_tidiers                           html  
+    kde_tidiers                             html  
+    kmeans_tidiers                          html  
+    list_tidiers                            html  
+    lm_tidiers                              html  
+    lme4_tidiers                            html  
+    lmodel2_tidiers                         html  
+    loess_tidiers                           html  
+    matrix_tidiers                          html  
+    mclust_tidiers                          html  
+    mcmc_tidiers                            html  
+    mle2_tidiers                            html  
+    muhaz_tidiers                           html  
+    multcomp_tidiers                        html  
+    multinom_tidiers                        html  
+    nlme_tidiers                            html  
+    nls_tidiers                             html  
+    optim_tidiers                           html  
+    orcutt_tidiers                          html  
+    plm_tidiers                             html  
+    poLCA_tidiers                           html  
+    prcomp_tidiers                          html  
+    process_ergm                            html  
+    process_geeglm                          html  
+    process_lm                              html  
+    process_rq                              html  
+    pyears_tidiers                          html  
+    rcorr_tidiers                           html  
+    ridgelm_tidiers                         html  
+    rlm_tidiers                             html  
+    robust_tidiers                          html  
+    rowwise_df_tidiers                      html  
+    rq_tidiers                              html  
+    rstanarm_tidiers                        html  
+    sexpfit_tidiers                         html  
+    smooth.spline_tidiers                   html  
+    sp_tidiers                              html  
+    sparse_tidiers                          html  
+    speedlm_tidiers                         html  
+    summary_tidiers                         html  
+    survdiff_tidiers                        html  
+    survfit_tidiers                         html  
+    survreg_tidiers                         html  
+    svd_tidiers                             html  
+    tidy.NULL                               html  
+    tidy                                    html  
+    tidy.TukeyHSD                           html  
+    tidy.coeftest                           html  
+    tidy.default                            html  
+    tidy.density                            html  
+    tidy.dist                               html  
+    tidy.ftable                             html  
+    tidy.manova                             html  
+    tidy.map                                html  
+    tidy.pairwise.htest                     html  
+    tidy.power.htest                        html  
+    tidy.spec                               html  
+    tidy.table                              html  
+    tidy.ts                                 html  
+    unrowname                               html  
+    vector_tidiers                          html  
+    xyz_tidiers                             html  
+    zoo_tidiers                             html  
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded
+* DONE (broom)
+trying URL 'https://mirror.its.sfu.ca/mirror/CRAN/src/contrib/ggplot2_2.2.1.tar.gz'
+Content type 'application/x-gzip' length 2213308 bytes (2.1 MB)
+==================================================
+downloaded 2.1 MB
+
+Installing ggplot2
+trying URL 'https://mirror.its.sfu.ca/mirror/CRAN/src/contrib/lazyeval_0.2.1.tar.gz'
+Content type 'application/x-gzip' length 80150 bytes (78 KB)
+==================================================
+downloaded 78 KB
+
+Installing lazyeval
+'/usr/lib64/R/bin/R' --no-site-file --no-environ --no-save --no-restore  \
+  --quiet CMD INSTALL '/tmp/RtmpaXqOXP/devtools7dd763721b86/lazyeval'  \
+  --library='/zfs/users/asda12/asda12/R/x86_64-redhat-linux-gnu-library/3.5'  \
+  --install-tests 
+
+* installing *source* package ‘lazyeval’ ...
+** package ‘lazyeval’ successfully unpacked and MD5 sums checked
+** libs
+gcc -m64 -std=gnu99 -I"/usr/include/R" -DNDEBUG   -I/usr/local/include   -fpic  -O2 -g -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector-strong --param=ssp-buffer-size=4 -grecord-gcc-switches   -m64 -mtune=generic  -c expr.c -o expr.o
+gcc -m64 -std=gnu99 -I"/usr/include/R" -DNDEBUG   -I/usr/local/include   -fpic  -O2 -g -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector-strong --param=ssp-buffer-size=4 -grecord-gcc-switches   -m64 -mtune=generic  -c init.c -o init.o
+gcc -m64 -std=gnu99 -I"/usr/include/R" -DNDEBUG   -I/usr/local/include   -fpic  -O2 -g -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector-strong --param=ssp-buffer-size=4 -grecord-gcc-switches   -m64 -mtune=generic  -c interp.c -o interp.o
+gcc -m64 -std=gnu99 -I"/usr/include/R" -DNDEBUG   -I/usr/local/include   -fpic  -O2 -g -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector-strong --param=ssp-buffer-size=4 -grecord-gcc-switches   -m64 -mtune=generic  -c lazy.c -o lazy.o
+gcc -m64 -std=gnu99 -I"/usr/include/R" -DNDEBUG   -I/usr/local/include   -fpic  -O2 -g -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector-strong --param=ssp-buffer-size=4 -grecord-gcc-switches   -m64 -mtune=generic  -c name.c -o name.o
+gcc -m64 -std=gnu99 -I"/usr/include/R" -DNDEBUG   -I/usr/local/include   -fpic  -O2 -g -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector-strong --param=ssp-buffer-size=4 -grecord-gcc-switches   -m64 -mtune=generic  -c utils.c -o utils.o
+gcc -m64 -std=gnu99 -shared -L/usr/lib64/R/lib -Wl,-z,relro -o lazyeval.so expr.o init.o interp.o lazy.o name.o utils.o -L/usr/lib64/R/lib -lR
+installing to /zfs/users/asda12/asda12/R/x86_64-redhat-linux-gnu-library/3.5/lazyeval/libs
+** R
+** inst
+** tests
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+  converting help for package ‘lazyeval’
+    finding HTML links ... done
+    all_dots                                html  
+    as.lazy                                 html  
+    as_name                                 html  
+    ast_                                    html  
+    auto_name                               html  
+    call_modify                             html  
+    call_new                                html  
+    common_env                              html  
+    expr_label                              html  
+    f_capture                               html  
+    f_eval                                  html  
+    f_interp                                html  
+    f_list                                  html  
+    f_new                                   html  
+    f_rhs                                   html  
+    f_text                                  html  
+    f_unwrap                                html  
+    function_new                            html  
+    interp                                  html  
+    is_formula                              html  
+    is_lang                                 html  
+    lazy_                                   html  
+    lazy_dots                               html  
+    lazy_eval                               html  
+    make_call                               html  
+    missing_arg                             html  
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded
+* DONE (lazyeval)
+trying URL 'https://mirror.its.sfu.ca/mirror/CRAN/src/contrib/scales_0.5.0.tar.gz'
+Content type 'application/x-gzip' length 59867 bytes (58 KB)
+==================================================
+downloaded 58 KB
+
+Installing scales
+trying URL 'https://mirror.its.sfu.ca/mirror/CRAN/src/contrib/munsell_0.5.0.tar.gz'
+Content type 'application/x-gzip' length 182653 bytes (178 KB)
+==================================================
+downloaded 178 KB
+
+Installing munsell
+trying URL 'https://mirror.its.sfu.ca/mirror/CRAN/src/contrib/colorspace_1.3-2.tar.gz'
+Content type 'application/x-gzip' length 293433 bytes (286 KB)
+==================================================
+downloaded 286 KB
+
+Installing colorspace
+'/usr/lib64/R/bin/R' --no-site-file --no-environ --no-save --no-restore  \
+  --quiet CMD INSTALL '/tmp/RtmpaXqOXP/devtools7dd763976522/colorspace'  \
+  --library='/zfs/users/asda12/asda12/R/x86_64-redhat-linux-gnu-library/3.5'  \
+  --install-tests 
+
+* installing *source* package ‘colorspace’ ...
+** package ‘colorspace’ successfully unpacked and MD5 sums checked
+** libs
+gcc -m64 -std=gnu99 -I"/usr/include/R" -DNDEBUG   -I/usr/local/include   -fpic  -O2 -g -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector-strong --param=ssp-buffer-size=4 -grecord-gcc-switches   -m64 -mtune=generic  -c colorspace.c -o colorspace.o
+colorspace.c: In function ‘sRGB_to_RColor’:
+colorspace.c:1302:39: warning: variable ‘nagen’ set but not used [-Wunused-but-set-variable]
+     int fixupvalue, i, ir, ig, ib, n, nagen;
+                                       ^
+colorspace.c: At top level:
+colorspace.c:589:13: warning: ‘CheckGamma’ defined but not used [-Wunused-function]
+ static void CheckGamma(SEXP gamma, double *gammaval)
+             ^
+gcc -m64 -std=gnu99 -shared -L/usr/lib64/R/lib -Wl,-z,relro -o colorspace.so colorspace.o -L/usr/lib64/R/lib -lR
+installing to /zfs/users/asda12/asda12/R/x86_64-redhat-linux-gnu-library/3.5/colorspace/libs
+** R
+** data
+*** moving datasets to lazyload DB
+** inst
+** tests
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+  converting help for package ‘colorspace’
+    finding HTML links ... done
+    HLS                                     html  
+    HSV                                     html  
+    LAB                                     html  
+    LUV                                     html  
+    RGB                                     html  
+    USSouthPolygon                          html  
+    XYZ                                     html  
+    choose_palette                          html  
+    color-class                             html  
+    coords                                  html  
+    desaturate                              html  
+    hex                                     html  
+    hex2RGB                                 html  
+    mixcolor                                html  
+    polarLAB                                html  
+    polarLUV                                html  
+    rainbow_hcl                             html  
+    readRGB                                 html  
+    readhex                                 html  
+    sRGB                                    html  
+    specplot                                html  
+    writehex                                html  
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded
+* DONE (colorspace)
+'/usr/lib64/R/bin/R' --no-site-file --no-environ --no-save --no-restore  \
+  --quiet CMD INSTALL '/tmp/RtmpaXqOXP/devtools7dd731483aa4/munsell'  \
+  --library='/zfs/users/asda12/asda12/R/x86_64-redhat-linux-gnu-library/3.5'  \
+  --install-tests 
+
+* installing *source* package ‘munsell’ ...
+** package ‘munsell’ successfully unpacked and MD5 sums checked
+** R
+** inst
+** tests
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+  converting help for package ‘munsell’
+    finding HTML links ... done
+    check_mnsl                              html  
+    chroma_slice                            html  
+    complement                              html  
+    complement_slice                        html  
+    darker                                  html  
+    desaturate                              html  
+    fix_mnsl                                html  
+    hue_slice                               html  
+    hvc2mnsl                                html  
+    in_gamut                                html  
+    lighter                                 html  
+    mnsl                                    html  
+    mnsl2hvc                                html  
+    mnsl_hues                               html  
+    munsell                                 html  
+    pbgyr                                   html  
+    plot_closest                            html  
+    plot_hex                                html  
+    plot_mnsl                               html  
+    rgb2mnsl                                html  
+    rygbp                                   html  
+    saturate                                html  
+    seq_mnsl                                html  
+    text_colour                             html  
+    theme_munsell                           html  
+    value_slice                             html  
+*** copying figures
+** building package indices
+** testing if installed package can be loaded
+* DONE (munsell)
+'/usr/lib64/R/bin/R' --no-site-file --no-environ --no-save --no-restore  \
+  --quiet CMD INSTALL '/tmp/RtmpaXqOXP/devtools7dd73948f55c/scales'  \
+  --library='/zfs/users/asda12/asda12/R/x86_64-redhat-linux-gnu-library/3.5'  \
+  --install-tests 
+
+* installing *source* package ‘scales’ ...
+** package ‘scales’ successfully unpacked and MD5 sums checked
+** libs
+g++ -m64  -I"/usr/include/R" -DNDEBUG  -I"/zfs/users/asda12/asda12/R/x86_64-redhat-linux-gnu-library/3.5/Rcpp/include" -I/usr/local/include   -fpic  -O2 -g -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector-strong --param=ssp-buffer-size=4 -grecord-gcc-switches   -m64 -mtune=generic  -c RcppExports.cpp -o RcppExports.o
+g++ -m64  -I"/usr/include/R" -DNDEBUG  -I"/zfs/users/asda12/asda12/R/x86_64-redhat-linux-gnu-library/3.5/Rcpp/include" -I/usr/local/include   -fpic  -O2 -g -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector-strong --param=ssp-buffer-size=4 -grecord-gcc-switches   -m64 -mtune=generic  -c colors.cpp -o colors.o
+g++ -m64 -shared -L/usr/lib64/R/lib -Wl,-z,relro -o scales.so RcppExports.o colors.o -L/usr/lib64/R/lib -lR
+installing to /zfs/users/asda12/asda12/R/x86_64-redhat-linux-gnu-library/3.5/scales/libs
+** R
+** tests
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+  converting help for package ‘scales’
+    finding HTML links ... done
+    Range                                   html  
+    abs_area                                html  
+    alpha                                   html  
+    area_pal                                html  
+    as.trans                                html  
+    asn_trans                               html  
+    atanh_trans                             html  
+    boxcox_trans                            html  
+    brewer_pal                              html  
+Rd warning: /tmp/RtmpaXqOXP/devtools7dd73948f55c/scales/man/brewer_pal.Rd:16: file link ‘brewer.pal’ in package ‘RColorBrewer’ does not exist and so has been treated as a topic
+    cbreaks                                 html  
+    censor                                  html  
+    col2hcl                                 html  
+    col_numeric                             html  
+    colour_ramp                             html  
+    comma_format                            html  
+    cscale                                  html  
+    date_breaks                             html  
+    date_format                             html  
+    date_trans                              html  
+    dichromat_pal                           html  
+    discard                                 html  
+    div_gradient_pal                        html  
+    dollar_format                           html  
+    dscale                                  html  
+    exp_trans                               html  
+    expand_range                            html  
+    extended_breaks                         html  
+    format_format                           html  
+    fullseq                                 html  
+    gradient_n_pal                          html  
+    grey_pal                                html  
+    hms_trans                               html  
+    hue_pal                                 html  
+    identity_pal                            html  
+    identity_trans                          html  
+    linetype_pal                            html  
+    log1p_trans                             html  
+    log_breaks                              html  
+    log_trans                               html  
+    manual_pal                              html  
+    math_format                             html  
+    muted                                   html  
+    ordinal_format                          html  
+    package-scales                          html  
+    parse_format                            html  
+    percent_format                          html  
+    pretty_breaks                           html  
+    probability_trans                       html  
+    reciprocal_trans                        html  
+    regular_minor_breaks                    html  
+    rescale                                 html  
+    rescale_max                             html  
+    rescale_mid                             html  
+    rescale_none                            html  
+    rescale_pal                             html  
+    reverse_trans                           html  
+    scientific_format                       html  
+    seq_gradient_pal                        html  
+    shape_pal                               html  
+    show_col                                html  
+    sqrt_trans                              html  
+    squish                                  html  
+    squish_infinite                         html  
+    time_trans                              html  
+    train_continuous                        html  
+    train_discrete                          html  
+    trans_breaks                            html  
+    trans_format                            html  
+    trans_new                               html  
+    trans_range                             html  
+    unit_format                             html  
+    viridis_pal                             html  
+    wrap_format                             html  
+    zero_range                              html  
+** building package indices
+** testing if installed package can be loaded
+* DONE (scales)
+'/usr/lib64/R/bin/R' --no-site-file --no-environ --no-save --no-restore  \
+  --quiet CMD INSTALL '/tmp/RtmpaXqOXP/devtools7dd7263378a7/ggplot2'  \
+  --library='/zfs/users/asda12/asda12/R/x86_64-redhat-linux-gnu-library/3.5'  \
+  --install-tests 
+
+* installing *source* package ‘ggplot2’ ...
+** package ‘ggplot2’ successfully unpacked and MD5 sums checked
+** R
+** data
+*** moving datasets to lazyload DB
+** inst
+** tests
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+  converting help for package ‘ggplot2’
+    finding HTML links ... done
+    absoluteGrob                            html  
+    add_theme                               html  
+    aes                                     html  
+    aes_                                    html  
+    aes_all                                 html  
+    aes_auto                                html  
+    aes_colour_fill_alpha                   html  
+    aes_group_order                         html  
+    aes_linetype_size_shape                 html  
+    aes_position                            html  
+    annotate                                html  
+    annotation_custom                       html  
+    annotation_logticks                     html  
+    annotation_map                          html  
+    annotation_raster                       html  
+    as.list.ggproto                         html  
+    as_labeller                             html  
+    autoplot                                html  
+    benchplot                               html  
+    borders                                 html  
+    calc_element                            html  
+    combine_vars                            html  
+    continuous_scale                        html  
+    coord_cartesian                         html  
+    coord_fixed                             html  
+    coord_flip                              html  
+    coord_map                               html  
+    coord_munch                             html  
+    coord_polar                             html  
+    coord_trans                             html  
+    cut_interval                            html  
+    diamonds                                html  
+    discrete_scale                          html  
+    draw_key                                html  
+    economics                               html  
+    element                                 html  
+    element_grob                            html  
+    expand_limits                           html  
+    facet_grid                              html  
+    facet_null                              html  
+    facet_wrap                              html  
+    faithfuld                               html  
+    find_panel                              html  
+    fortify-multcomp                        html  
+    fortify                                 html  
+    fortify.lm                              html  
+    fortify.map                             html  
+    fortify.sp                              html  
+    geom_abline                             html  
+    geom_bar                                html  
+    geom_bin2d                              html  
+    geom_blank                              html  
+    geom_boxplot                            html  
+    geom_contour                            html  
+    geom_count                              html  
+    geom_density                            html  
+Rd warning: /private/tmp/RtmpOehmhT/Rbuild6d6422ab8107/ggplot2/man/geom_density.Rd:63: file link ‘bw.nrd’ in package ‘stats’ does not exist and so has been treated as a topic
+    geom_density_2d                         html  
+    geom_dotplot                            html  
+    geom_errorbarh                          html  
+    geom_hex                                html  
+    geom_histogram                          html  
+    geom_jitter                             html  
+    geom_linerange                          html  
+    geom_map                                html  
+    geom_path                               html  
+    geom_point                              html  
+    geom_polygon                            html  
+    geom_qq                                 html  
+    geom_quantile                           html  
+    geom_ribbon                             html  
+    geom_rug                                html  
+    geom_segment                            html  
+Rd warning: /private/tmp/RtmpOehmhT/Rbuild6d6422ab8107/ggplot2/man/geom_segment.Rd:80: file link ‘curveGrob’ in package ‘grid’ does not exist and so has been treated as a topic
+    geom_smooth                             html  
+    geom_spoke                              html  
+    geom_text                               html  
+    geom_tile                               html  
+    geom_violin                             html  
+Rd warning: /private/tmp/RtmpOehmhT/Rbuild6d6422ab8107/ggplot2/man/geom_violin.Rd:73: file link ‘bw.nrd’ in package ‘stats’ does not exist and so has been treated as a topic
+    gg-add                                  html  
+    gg_dep                                  html  
+    ggplot                                  html  
+    ggplot2-ggproto                         html  
+    finding level-2 HTML links ... done
+
+    ggplot2-package                         html  
+    ggplotGrob                              html  
+    ggplot_build                            html  
+    ggplot_gtable                           html  
+    ggproto                                 html  
+    ggsave                                  html  
+    ggtheme                                 html  
+    graphical-units                         html  
+    guide_colourbar                         html  
+    guide_legend                            html  
+    guides                                  html  
+    hmisc                                   html  
+    is.Coord                                html  
+    is.facet                                html  
+    is.ggplot                               html  
+    is.rel                                  html  
+    is.theme                                html  
+    label_bquote                            html  
+    labeller                                html  
+    labellers                               html  
+    labs                                    html  
+    last_plot                               html  
+    layer                                   html  
+    limits                                  html  
+    lims                                    html  
+    luv_colours                             html  
+    map_data                                html  
+    max_height                              html  
+    mean_se                                 html  
+    midwest                                 html  
+    mpg                                     html  
+    msleep                                  html  
+    position_dodge                          html  
+    position_identity                       html  
+    position_jitter                         html  
+    position_jitterdodge                    html  
+    position_nudge                          html  
+    position_stack                          html  
+    presidential                            html  
+    print.ggplot                            html  
+    print.ggproto                           html  
+    qplot                                   html  
+    reexports                               html  
+    remove_missing                          html  
+    render_axes                             html  
+    render_strips                           html  
+    resolution                              html  
+    scale_alpha                             html  
+    scale_brewer                            html  
+Rd warning: /tmp/RtmpaXqOXP/devtools7dd7263378a7/ggplot2/man/scale_brewer.Rd:34: file link ‘brewer.pal’ in package ‘RColorBrewer’ does not exist and so has been treated as a topic
+    scale_continuous                        html  
+    scale_date                              html  
+    scale_discrete                          html  
+    scale_gradient                          html  
+    scale_grey                              html  
+    scale_hue                               html  
+    scale_identity                          html  
+    scale_linetype                          html  
+    scale_manual                            html  
+    scale_shape                             html  
+    scale_size                              html  
+    seals                                   html  
+    sec_axis                                html  
+    should_stop                             html  
+    stat_ecdf                               html  
+    stat_ellipse                            html  
+    stat_function                           html  
+    stat_identity                           html  
+    stat_summary                            html  
+    stat_summary_2d                         html  
+    stat_unique                             html  
+    summary.ggplot                          html  
+    theme                                   html  
+    theme_get                               html  
+    transform_position                      html  
+    translate_qplot_ggplot                  html  
+    translate_qplot_lattice                 html  
+    txhousing                               html  
+    update_defaults                         html  
+    update_labels                           html  
+    waiver                                  html  
+    wrap_dims                               html  
+    zeroGrob                                html  
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded
+* DONE (ggplot2)
+trying URL 'https://mirror.its.sfu.ca/mirror/CRAN/src/contrib/modelr_0.1.2.tar.gz'
+Content type 'application/x-gzip' length 118432 bytes (115 KB)
+==================================================
+downloaded 115 KB
+
+Installing modelr
+'/usr/lib64/R/bin/R' --no-site-file --no-environ --no-save --no-restore  \
+  --quiet CMD INSTALL '/tmp/RtmpaXqOXP/devtools7dd742ee166f/modelr'  \
+  --library='/zfs/users/asda12/asda12/R/x86_64-redhat-linux-gnu-library/3.5'  \
+  --install-tests 
+
+* installing *source* package ‘modelr’ ...
+** package ‘modelr’ successfully unpacked and MD5 sums checked
+** R
+** data
+*** moving datasets to lazyload DB
+** tests
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+  converting help for package ‘modelr’
+    finding HTML links ... done
+    add_predictions                         html  
+    add_predictors                          html  
+    add_residuals                           html  
+    bootstrap                               html  
+    crossv_mc                               html  
+    data_grid                               html  
+    fit_with                                html  
+    formulas                                html  
+    geom_ref_line                           html  
+    heights                                 html  
+    model-quality                           html  
+    model_matrix                            html  
+    modelr-package                          html  
+    na.warn                                 html  
+Rd warning: /tmp/RtmpaXqOXP/devtools7dd742ee166f/modelr/man/na.warn.Rd:17: file link ‘na.exclude’ in package ‘stats’ does not exist and so has been treated as a topic
+    permute                                 html  
+Rd warning: /tmp/RtmpaXqOXP/devtools7dd742ee166f/modelr/man/permute.Rd:18: file link ‘select_helpers’ in package ‘dplyr’ does not exist and so has been treated as a topic
+    pipe                                    html  
+    resample                                html  
+    resample_bootstrap                      html  
+    resample_partition                      html  
+    resample_permutation                    html  
+    seq_range                               html  
+    sim                                     html  
+    typical                                 html  
+*** copying figures
+** building package indices
+** testing if installed package can be loaded
+* DONE (modelr)
+trying URL 'https://mirror.its.sfu.ca/mirror/CRAN/src/contrib/reprex_0.2.0.tar.gz'
+Content type 'application/x-gzip' length 357008 bytes (348 KB)
+==================================================
+downloaded 348 KB
+
+Installing reprex
+trying URL 'https://mirror.its.sfu.ca/mirror/CRAN/src/contrib/rmarkdown_1.10.tar.gz'
+Content type 'application/x-gzip' length 2447327 bytes (2.3 MB)
+==================================================
+downloaded 2.3 MB
+
+Installing rmarkdown
+trying URL 'https://mirror.its.sfu.ca/mirror/CRAN/src/contrib/htmltools_0.3.6.tar.gz'
+Content type 'application/x-gzip' length 45408 bytes (44 KB)
+==================================================
+downloaded 44 KB
+
+Installing htmltools
+'/usr/lib64/R/bin/R' --no-site-file --no-environ --no-save --no-restore  \
+  --quiet CMD INSTALL '/tmp/RtmpaXqOXP/devtools7dd718902f5c/htmltools'  \
+  --library='/zfs/users/asda12/asda12/R/x86_64-redhat-linux-gnu-library/3.5'  \
+  --install-tests 
+
+* installing *source* package ‘htmltools’ ...
+** package ‘htmltools’ successfully unpacked and MD5 sums checked
+** libs
+g++ -m64  -I"/usr/include/R" -DNDEBUG  -I"/zfs/users/asda12/asda12/R/x86_64-redhat-linux-gnu-library/3.5/Rcpp/include" -I/usr/local/include   -fpic  -O2 -g -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector-strong --param=ssp-buffer-size=4 -grecord-gcc-switches   -m64 -mtune=generic  -c RcppExports.cpp -o RcppExports.o
+gcc -m64 -std=gnu99 -I"/usr/include/R" -DNDEBUG  -I"/zfs/users/asda12/asda12/R/x86_64-redhat-linux-gnu-library/3.5/Rcpp/include" -I/usr/local/include   -fpic  -O2 -g -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector-strong --param=ssp-buffer-size=4 -grecord-gcc-switches   -m64 -mtune=generic  -c init.c -o init.o
+g++ -m64  -I"/usr/include/R" -DNDEBUG  -I"/zfs/users/asda12/asda12/R/x86_64-redhat-linux-gnu-library/3.5/Rcpp/include" -I/usr/local/include   -fpic  -O2 -g -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector-strong --param=ssp-buffer-size=4 -grecord-gcc-switches   -m64 -mtune=generic  -c template.cpp -o template.o
+g++ -m64 -shared -L/usr/lib64/R/lib -Wl,-z,relro -o htmltools.so RcppExports.o init.o template.o -L/usr/lib64/R/lib -lR
+installing to /zfs/users/asda12/asda12/R/x86_64-redhat-linux-gnu-library/3.5/htmltools/libs
+** R
+** tests
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+  converting help for package ‘htmltools’
+    finding HTML links ... done
+    HTML                                    html  
+    as.tags                                 html  
+Rd warning: /tmp/RtmpaXqOXP/devtools7dd718902f5c/htmltools/man/as.tags.Rd:17: file link ‘as.character’ in package ‘base’ does not exist and so has been treated as a topic
+    browsable                               html  
+    builder                                 html  
+    copyDependencyToDir                     html  
+    css                                     html  
+    findDependencies                        html  
+    htmlDependencies                        html  
+    htmlDependency                          html  
+    htmlEscape                              html  
+    htmlPreserve                            html  
+    htmlTemplate                            html  
+    html_print                              html  
+    include                                 html  
+    knitr_methods                           html  
+    makeDependencyRelative                  html  
+    print.html                              html  
+    renderDependencies                      html  
+    renderDocument                          html  
+    renderTags                              html  
+    resolveDependencies                     html  
+    save_html                               html  
+    singleton                               html  
+    singleton_tools                         html  
+    subtractDependencies                    html  
+    suppressDependencies                    html  
+    tag                                     html  
+    urlEncodePath                           html  
+    validateCssUnit                         html  
+    withTags                                html  
+** building package indices
+** testing if installed package can be loaded
+* DONE (htmltools)
+trying URL 'https://mirror.its.sfu.ca/mirror/CRAN/src/contrib/mime_0.5.tar.gz'
+Content type 'application/x-gzip' length 12634 bytes (12 KB)
+==================================================
+downloaded 12 KB
+
+Installing mime
+'/usr/lib64/R/bin/R' --no-site-file --no-environ --no-save --no-restore  \
+  --quiet CMD INSTALL '/tmp/RtmpaXqOXP/devtools7dd733d2f30b/mime'  \
+  --library='/zfs/users/asda12/asda12/R/x86_64-redhat-linux-gnu-library/3.5'  \
+  --install-tests 
+
+* installing *source* package ‘mime’ ...
+** package ‘mime’ successfully unpacked and MD5 sums checked
+** libs
+gcc -m64 -std=gnu99 -I"/usr/include/R" -DNDEBUG   -I/usr/local/include   -fpic  -O2 -g -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector-strong --param=ssp-buffer-size=4 -grecord-gcc-switches   -m64 -mtune=generic  -c rawmatch.c -o rawmatch.o
+gcc -m64 -std=gnu99 -shared -L/usr/lib64/R/lib -Wl,-z,relro -o mime.so rawmatch.o -L/usr/lib64/R/lib -lR
+installing to /zfs/users/asda12/asda12/R/x86_64-redhat-linux-gnu-library/3.5/mime/libs
+** R
+** tests
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+  converting help for package ‘mime’
+    finding HTML links ... done
+    guess_type                              html  
+    mimemap                                 html  
+    parse_multipart                         html  
+** building package indices
+** testing if installed package can be loaded
+* DONE (mime)
+trying URL 'https://mirror.its.sfu.ca/mirror/CRAN/src/contrib/yaml_2.1.19.tar.gz'
+Content type 'application/x-gzip' length 86157 bytes (84 KB)
+==================================================
+downloaded 84 KB
+
+Installing yaml
+'/usr/lib64/R/bin/R' --no-site-file --no-environ --no-save --no-restore  \
+  --quiet CMD INSTALL '/tmp/RtmpaXqOXP/devtools7dd7c969041/yaml'  \
+  --library='/zfs/users/asda12/asda12/R/x86_64-redhat-linux-gnu-library/3.5'  \
+  --install-tests 
+
+* installing *source* package ‘yaml’ ...
+** package ‘yaml’ successfully unpacked and MD5 sums checked
+** libs
+gcc -m64 -std=gnu99 -I"/usr/include/R" -DNDEBUG -I. -DNDEBUG  -I/usr/local/include   -fpic  -O2 -g -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector-strong --param=ssp-buffer-size=4 -grecord-gcc-switches   -m64 -mtune=generic  -c api.c -o api.o
+api.c: In function ‘yaml_document_delete’:
+api.c:1133:7: warning: variable ‘context’ set but not used [-Wunused-but-set-variable]
+     } context;
+       ^
+gcc -m64 -std=gnu99 -I"/usr/include/R" -DNDEBUG -I. -DNDEBUG  -I/usr/local/include   -fpic  -O2 -g -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector-strong --param=ssp-buffer-size=4 -grecord-gcc-switches   -m64 -mtune=generic  -c dumper.c -o dumper.o
+gcc -m64 -std=gnu99 -I"/usr/include/R" -DNDEBUG -I. -DNDEBUG  -I/usr/local/include   -fpic  -O2 -g -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector-strong --param=ssp-buffer-size=4 -grecord-gcc-switches   -m64 -mtune=generic  -c emitter.c -o emitter.o
+emitter.c: In function ‘yaml_emitter_write_plain_scalar’:
+emitter.c:28:6: warning: value computed is not used [-Wunused-value]
+      && ((emitter->line_break == YAML_CR_BREAK ?                                \
+      ^
+emitter.c:56:11: note: in expansion of macro ‘PUT_BREAK’
+          (PUT_BREAK(emitter),                                                   \
+           ^
+emitter.c:1933:18: note: in expansion of macro ‘WRITE_BREAK’
+             if (!WRITE_BREAK(emitter, string)) return 0;
+                  ^
+emitter.c:28:6: warning: value computed is not used [-Wunused-value]
+      && ((emitter->line_break == YAML_CR_BREAK ?                                \
+      ^
+emitter.c:56:11: note: in expansion of macro ‘PUT_BREAK’
+          (PUT_BREAK(emitter),                                                   \
+           ^
+emitter.c:1933:18: note: in expansion of macro ‘WRITE_BREAK’
+             if (!WRITE_BREAK(emitter, string)) return 0;
+                  ^
+emitter.c: In function ‘yaml_emitter_write_single_quoted_scalar’:
+emitter.c:28:6: warning: value computed is not used [-Wunused-value]
+      && ((emitter->line_break == YAML_CR_BREAK ?                                \
+      ^
+emitter.c:56:11: note: in expansion of macro ‘PUT_BREAK’
+          (PUT_BREAK(emitter),                                                   \
+           ^
+emitter.c:1994:18: note: in expansion of macro ‘WRITE_BREAK’
+             if (!WRITE_BREAK(emitter, string)) return 0;
+                  ^
+emitter.c:28:6: warning: value computed is not used [-Wunused-value]
+      && ((emitter->line_break == YAML_CR_BREAK ?                                \
+      ^
+emitter.c:56:11: note: in expansion of macro ‘PUT_BREAK’
+          (PUT_BREAK(emitter),                                                   \
+           ^
+emitter.c:1994:18: note: in expansion of macro ‘WRITE_BREAK’
+             if (!WRITE_BREAK(emitter, string)) return 0;
+                  ^
+emitter.c: In function ‘yaml_emitter_write_literal_scalar’:
+emitter.c:28:6: warning: value computed is not used [-Wunused-value]
+      && ((emitter->line_break == YAML_CR_BREAK ?                                \
+      ^
+emitter.c:56:11: note: in expansion of macro ‘PUT_BREAK’
+          (PUT_BREAK(emitter),                                                   \
+           ^
+emitter.c:2257:18: note: in expansion of macro ‘WRITE_BREAK’
+             if (!WRITE_BREAK(emitter, string)) return 0;
+                  ^
+emitter.c:28:6: warning: value computed is not used [-Wunused-value]
+      && ((emitter->line_break == YAML_CR_BREAK ?                                \
+      ^
+emitter.c:56:11: note: in expansion of macro ‘PUT_BREAK’
+          (PUT_BREAK(emitter),                                                   \
+           ^
+emitter.c:2257:18: note: in expansion of macro ‘WRITE_BREAK’
+             if (!WRITE_BREAK(emitter, string)) return 0;
+                  ^
+emitter.c: In function ‘yaml_emitter_write_folded_scalar’:
+emitter.c:28:6: warning: value computed is not used [-Wunused-value]
+      && ((emitter->line_break == YAML_CR_BREAK ?                                \
+      ^
+emitter.c:56:11: note: in expansion of macro ‘PUT_BREAK’
+          (PUT_BREAK(emitter),                                                   \
+           ^
+emitter.c:2306:18: note: in expansion of macro ‘WRITE_BREAK’
+             if (!WRITE_BREAK(emitter, string)) return 0;
+                  ^
+emitter.c:28:6: warning: value computed is not used [-Wunused-value]
+      && ((emitter->line_break == YAML_CR_BREAK ?                                \
+      ^
+emitter.c:56:11: note: in expansion of macro ‘PUT_BREAK’
+          (PUT_BREAK(emitter),                                                   \
+           ^
+emitter.c:2306:18: note: in expansion of macro ‘WRITE_BREAK’
+             if (!WRITE_BREAK(emitter, string)) return 0;
+                  ^
+gcc -m64 -std=gnu99 -I"/usr/include/R" -DNDEBUG -I. -DNDEBUG  -I/usr/local/include   -fpic  -O2 -g -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector-strong --param=ssp-buffer-size=4 -grecord-gcc-switches   -m64 -mtune=generic  -c implicit.c -o implicit.o
+implicit.re: In function ‘find_implicit_tag’:
+implicit.re:12:24: warning: variable ‘limit’ set but not used [-Wunused-but-set-variable]
+gcc -m64 -std=gnu99 -I"/usr/include/R" -DNDEBUG -I. -DNDEBUG  -I/usr/local/include   -fpic  -O2 -g -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector-strong --param=ssp-buffer-size=4 -grecord-gcc-switches   -m64 -mtune=generic  -c loader.c -o loader.o
+gcc -m64 -std=gnu99 -I"/usr/include/R" -DNDEBUG -I. -DNDEBUG  -I/usr/local/include   -fpic  -O2 -g -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector-strong --param=ssp-buffer-size=4 -grecord-gcc-switches   -m64 -mtune=generic  -c parser.c -o parser.o
+parser.c: In function ‘yaml_parser_parse_block_sequence_entry’:
+parser.c:762:21: warning: variable ‘dummy_mark’ set but not used [-Wunused-but-set-variable]
+         yaml_mark_t dummy_mark;     /* Used to eliminate a compiler warning. */
+                     ^
+parser.c: In function ‘yaml_parser_parse_block_mapping_key’:
+parser.c:872:21: warning: variable ‘dummy_mark’ set but not used [-Wunused-but-set-variable]
+         yaml_mark_t dummy_mark;     /* Used to eliminate a compiler warning. */
+                     ^
+parser.c: In function ‘yaml_parser_parse_flow_sequence_entry’:
+parser.c:955:17: warning: variable ‘dummy_mark’ set but not used [-Wunused-but-set-variable]
+     yaml_mark_t dummy_mark;     /* Used to eliminate a compiler warning. */
+                 ^
+parser.c: In function ‘yaml_parser_parse_flow_mapping_key’:
+parser.c:1107:17: warning: variable ‘dummy_mark’ set but not used [-Wunused-but-set-variable]
+     yaml_mark_t dummy_mark;     /* Used to eliminate a compiler warning. */
+                 ^
+gcc -m64 -std=gnu99 -I"/usr/include/R" -DNDEBUG -I. -DNDEBUG  -I/usr/local/include   -fpic  -O2 -g -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector-strong --param=ssp-buffer-size=4 -grecord-gcc-switches   -m64 -mtune=generic  -c r_emit.c -o r_emit.o
+gcc -m64 -std=gnu99 -I"/usr/include/R" -DNDEBUG -I. -DNDEBUG  -I/usr/local/include   -fpic  -O2 -g -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector-strong --param=ssp-buffer-size=4 -grecord-gcc-switches   -m64 -mtune=generic  -c r_ext.c -o r_ext.o
+gcc -m64 -std=gnu99 -I"/usr/include/R" -DNDEBUG -I. -DNDEBUG  -I/usr/local/include   -fpic  -O2 -g -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector-strong --param=ssp-buffer-size=4 -grecord-gcc-switches   -m64 -mtune=generic  -c r_parse.c -o r_parse.o
+gcc -m64 -std=gnu99 -I"/usr/include/R" -DNDEBUG -I. -DNDEBUG  -I/usr/local/include   -fpic  -O2 -g -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector-strong --param=ssp-buffer-size=4 -grecord-gcc-switches   -m64 -mtune=generic  -c reader.c -o reader.o
+gcc -m64 -std=gnu99 -I"/usr/include/R" -DNDEBUG -I. -DNDEBUG  -I/usr/local/include   -fpic  -O2 -g -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector-strong --param=ssp-buffer-size=4 -grecord-gcc-switches   -m64 -mtune=generic  -c scanner.c -o scanner.o
+scanner.c: In function ‘yaml_parser_decrease_flow_level’:
+scanner.c:1189:23: warning: variable ‘dummy_key’ set but not used [-Wunused-but-set-variable]
+     yaml_simple_key_t dummy_key;    /* Used to eliminate a compiler warning. */
+                       ^
+gcc -m64 -std=gnu99 -I"/usr/include/R" -DNDEBUG -I. -DNDEBUG  -I/usr/local/include   -fpic  -O2 -g -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector-strong --param=ssp-buffer-size=4 -grecord-gcc-switches   -m64 -mtune=generic  -c writer.c -o writer.o
+gcc -m64 -std=gnu99 -shared -L/usr/lib64/R/lib -Wl,-z,relro -o yaml.so api.o dumper.o emitter.o implicit.o loader.o parser.o r_emit.o r_ext.o r_parse.o reader.o scanner.o writer.o -L/usr/lib64/R/lib -lR
+installing to /zfs/users/asda12/asda12/R/x86_64-redhat-linux-gnu-library/3.5/yaml/libs
+** R
+** inst
+** tests
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+  converting help for package ‘yaml’
+    finding HTML links ... done
+    as.yaml                                 html  
+    read_yaml                               html  
+    write_yaml                              html  
+    yaml.load                               html  
+** building package indices
+** testing if installed package can be loaded
+* DONE (yaml)
+'/usr/lib64/R/bin/R' --no-site-file --no-environ --no-save --no-restore  \
+  --quiet CMD INSTALL '/tmp/RtmpaXqOXP/devtools7dd774a00756/rmarkdown'  \
+  --library='/zfs/users/asda12/asda12/R/x86_64-redhat-linux-gnu-library/3.5'  \
+  --install-tests 
+
+* installing *source* package ‘rmarkdown’ ...
+** package ‘rmarkdown’ successfully unpacked and MD5 sums checked
+** R
+** inst
+** tests
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+  converting help for package ‘rmarkdown’
+    finding HTML links ... done
+    all_output_formats                      html  
+    beamer_presentation                     html  
+    compile_notebook                        html  
+    default_output_format                   html  
+    draft                                   html  
+    find_external_resources                 html  
+    github_document                         html  
+    html-dependencies                       html  
+    html_document                           html  
+    html_document_base                      html  
+    html_fragment                           html  
+    html_notebook                           html  
+    html_notebook_metadata                  html  
+    html_notebook_output                    html  
+    html_vignette                           html  
+    includes                                html  
+    ioslides_presentation                   html  
+    knit_params_ask                         html  
+    knitr_options                           html  
+    knitr_options_html                      html  
+    knitr_options_pdf                       html  
+    latex_dependency                        html  
+    md_document                             html  
+    metadata                                html  
+    navbar_html                             html  
+    odt_document                            html  
+    output_format                           html  
+    output_metadata                         html  
+    paged_table                             html  
+    pandoc_args                             html  
+    pandoc_available                        html  
+    pandoc_citeproc_convert                 html  
+    pandoc_convert                          html  
+    pandoc_options                          html  
+    pandoc_path_arg                         html  
+    pandoc_self_contained_html              html  
+    pandoc_template                         html  
+    parse_html_notebook                     html  
+    pdf_document                            html  
+    powerpoint_presentation                 html  
+    relative_to                             html  
+    render                                  html  
+    render_delayed                          html  
+    render_site                             html  
+    render_supporting_files                 html  
+    resolve_output_format                   html  
+    rmarkdown-package                       html  
+    rmarkdown_format                        html  
+    rmd_metadata                            html  
+    rtf_document                            html  
+    run                                     html  
+    shiny_prerendered_chunk                 html  
+    shiny_prerendered_clean                 html  
+    shiny_prerendered_server_start_code     html  
+    site_resources                          html  
+    slidy_presentation                      html  
+    tufte_handout                           html  
+    word_document                           html  
+    yaml_front_matter                       html  
+** building package indices
+** testing if installed package can be loaded
+* DONE (rmarkdown)
+'/usr/lib64/R/bin/R' --no-site-file --no-environ --no-save --no-restore  \
+  --quiet CMD INSTALL '/tmp/RtmpaXqOXP/devtools7dd7599e609b/reprex'  \
+  --library='/zfs/users/asda12/asda12/R/x86_64-redhat-linux-gnu-library/3.5'  \
+  --install-tests 
+
+* installing *source* package ‘reprex’ ...
+** package ‘reprex’ successfully unpacked and MD5 sums checked
+** R
+** inst
+** tests
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+  converting help for package ‘reprex’
+    finding HTML links ... done
+    opt                                     html  
+    reprex                                  html  
+Rd warning: /tmp/RtmpaXqOXP/devtools7dd7599e609b/reprex/man/reprex.Rd:71: file link ‘r_safe’ in package ‘callr’ does not exist and so has been treated as a topic
+    reprex_addin                            html  
+    un-reprex                               html  
+*** copying figures
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded
+* DONE (reprex)
+trying URL 'https://mirror.its.sfu.ca/mirror/CRAN/src/contrib/rvest_0.3.2.tar.gz'
+Content type 'application/x-gzip' length 1597137 bytes (1.5 MB)
+==================================================
+downloaded 1.5 MB
+
+Installing rvest
+trying URL 'https://mirror.its.sfu.ca/mirror/CRAN/src/contrib/xml2_1.2.0.tar.gz'
+Content type 'application/x-gzip' length 251614 bytes (245 KB)
+==================================================
+downloaded 245 KB
+
+Installing xml2
+'/usr/lib64/R/bin/R' --no-site-file --no-environ --no-save --no-restore  \
+  --quiet CMD INSTALL '/tmp/RtmpaXqOXP/devtools7dd735d06e76/xml2'  \
+  --library='/zfs/users/asda12/asda12/R/x86_64-redhat-linux-gnu-library/3.5'  \
+  --install-tests 
+
+* installing *source* package ‘xml2’ ...
+** package ‘xml2’ successfully unpacked and MD5 sums checked
+Found pkg-config cflags and libs!
+Using PKG_CFLAGS=-I/opt/anaconda2/include/libxml2 -I/opt/anaconda2/include
+Using PKG_LIBS=-L/opt/anaconda2/lib -lxml2 -L/opt/anaconda2/lib -lz -L/opt/anaconda2/lib -liconv -lm -ldl
+** libs
+g++ -m64  -I"/usr/include/R" -DNDEBUG -I../inst/include -I/opt/anaconda2/include/libxml2 -I/opt/anaconda2/include -I"/zfs/users/asda12/asda12/R/x86_64-redhat-linux-gnu-library/3.5/Rcpp/include" -I/usr/local/include  -fvisibility=hidden -fpic  -O2 -g -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector-strong --param=ssp-buffer-size=4 -grecord-gcc-switches   -m64 -mtune=generic  -c RcppExports.cpp -o RcppExports.o
+g++ -m64  -I"/usr/include/R" -DNDEBUG -I../inst/include -I/opt/anaconda2/include/libxml2 -I/opt/anaconda2/include -I"/zfs/users/asda12/asda12/R/x86_64-redhat-linux-gnu-library/3.5/Rcpp/include" -I/usr/local/include  -fvisibility=hidden -fpic  -O2 -g -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector-strong --param=ssp-buffer-size=4 -grecord-gcc-switches   -m64 -mtune=generic  -c connection.cpp -o connection.o
+g++ -m64  -I"/usr/include/R" -DNDEBUG -I../inst/include -I/opt/anaconda2/include/libxml2 -I/opt/anaconda2/include -I"/zfs/users/asda12/asda12/R/x86_64-redhat-linux-gnu-library/3.5/Rcpp/include" -I/usr/local/include  -fvisibility=hidden -fpic  -O2 -g -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector-strong --param=ssp-buffer-size=4 -grecord-gcc-switches   -m64 -mtune=generic  -c xml2_doc.cpp -o xml2_doc.o
+g++ -m64  -I"/usr/include/R" -DNDEBUG -I../inst/include -I/opt/anaconda2/include/libxml2 -I/opt/anaconda2/include -I"/zfs/users/asda12/asda12/R/x86_64-redhat-linux-gnu-library/3.5/Rcpp/include" -I/usr/local/include  -fvisibility=hidden -fpic  -O2 -g -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector-strong --param=ssp-buffer-size=4 -grecord-gcc-switches   -m64 -mtune=generic  -c xml2_init.cpp -o xml2_init.o
+g++ -m64  -I"/usr/include/R" -DNDEBUG -I../inst/include -I/opt/anaconda2/include/libxml2 -I/opt/anaconda2/include -I"/zfs/users/asda12/asda12/R/x86_64-redhat-linux-gnu-library/3.5/Rcpp/include" -I/usr/local/include  -fvisibility=hidden -fpic  -O2 -g -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector-strong --param=ssp-buffer-size=4 -grecord-gcc-switches   -m64 -mtune=generic  -c xml2_namespace.cpp -o xml2_namespace.o
+g++ -m64  -I"/usr/include/R" -DNDEBUG -I../inst/include -I/opt/anaconda2/include/libxml2 -I/opt/anaconda2/include -I"/zfs/users/asda12/asda12/R/x86_64-redhat-linux-gnu-library/3.5/Rcpp/include" -I/usr/local/include  -fvisibility=hidden -fpic  -O2 -g -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector-strong --param=ssp-buffer-size=4 -grecord-gcc-switches   -m64 -mtune=generic  -c xml2_node.cpp -o xml2_node.o
+g++ -m64  -I"/usr/include/R" -DNDEBUG -I../inst/include -I/opt/anaconda2/include/libxml2 -I/opt/anaconda2/include -I"/zfs/users/asda12/asda12/R/x86_64-redhat-linux-gnu-library/3.5/Rcpp/include" -I/usr/local/include  -fvisibility=hidden -fpic  -O2 -g -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector-strong --param=ssp-buffer-size=4 -grecord-gcc-switches   -m64 -mtune=generic  -c xml2_output.cpp -o xml2_output.o
+g++ -m64  -I"/usr/include/R" -DNDEBUG -I../inst/include -I/opt/anaconda2/include/libxml2 -I/opt/anaconda2/include -I"/zfs/users/asda12/asda12/R/x86_64-redhat-linux-gnu-library/3.5/Rcpp/include" -I/usr/local/include  -fvisibility=hidden -fpic  -O2 -g -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector-strong --param=ssp-buffer-size=4 -grecord-gcc-switches   -m64 -mtune=generic  -c xml2_schema.cpp -o xml2_schema.o
+g++ -m64  -I"/usr/include/R" -DNDEBUG -I../inst/include -I/opt/anaconda2/include/libxml2 -I/opt/anaconda2/include -I"/zfs/users/asda12/asda12/R/x86_64-redhat-linux-gnu-library/3.5/Rcpp/include" -I/usr/local/include  -fvisibility=hidden -fpic  -O2 -g -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector-strong --param=ssp-buffer-size=4 -grecord-gcc-switches   -m64 -mtune=generic  -c xml2_url.cpp -o xml2_url.o
+g++ -m64  -I"/usr/include/R" -DNDEBUG -I../inst/include -I/opt/anaconda2/include/libxml2 -I/opt/anaconda2/include -I"/zfs/users/asda12/asda12/R/x86_64-redhat-linux-gnu-library/3.5/Rcpp/include" -I/usr/local/include  -fvisibility=hidden -fpic  -O2 -g -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector-strong --param=ssp-buffer-size=4 -grecord-gcc-switches   -m64 -mtune=generic  -c xml2_xpath.cpp -o xml2_xpath.o
+g++ -m64 -shared -L/usr/lib64/R/lib -Wl,-z,relro -o xml2.so RcppExports.o connection.o xml2_doc.o xml2_init.o xml2_namespace.o xml2_node.o xml2_output.o xml2_schema.o xml2_url.o xml2_xpath.o -L/opt/anaconda2/lib -lxml2 -L/opt/anaconda2/lib -lz -L/opt/anaconda2/lib -liconv -lm -ldl -L/usr/lib64/R/lib -lR
+installing to /zfs/users/asda12/asda12/R/x86_64-redhat-linux-gnu-library/3.5/xml2/libs
+** R
+** inst
+** tests
+** byte-compile and prepare package for lazy loading
+** help
+Error : /tmp/RtmpaXqOXP/devtools7dd735d06e76/xml2/man/read_xml.Rd:47: unable to load shared object '/zfs/users/asda12/asda12/R/x86_64-redhat-linux-gnu-library/3.5/xml2/libs/xml2.so':
+  libiconv.so.2: cannot open shared object file: No such file or directory
+ERROR: installing Rd objects failed for package ‘xml2’
+* removing ‘/zfs/users/asda12/asda12/R/x86_64-redhat-linux-gnu-library/3.5/xml2’
+Installation failed: Command failed (1)
+'/usr/lib64/R/bin/R' --no-site-file --no-environ --no-save --no-restore  \
+  --quiet CMD INSTALL '/tmp/RtmpaXqOXP/devtools7dd73420989a/rvest'  \
+  --library='/zfs/users/asda12/asda12/R/x86_64-redhat-linux-gnu-library/3.5'  \
+  --install-tests 
+
+ERROR: dependency ‘xml2’ is not available for package ‘rvest’
+* removing ‘/zfs/users/asda12/asda12/R/x86_64-redhat-linux-gnu-library/3.5/rvest’
+Installation failed: Command failed (1)
+trying URL 'https://mirror.its.sfu.ca/mirror/CRAN/src/contrib/xml2_1.2.0.tar.gz'
+Content type 'application/x-gzip' length 251614 bytes (245 KB)
+==================================================
+downloaded 245 KB
+
+Skipping xml2, it is already being installed.
+'/usr/lib64/R/bin/R' --no-site-file --no-environ --no-save --no-restore  \
+  --quiet CMD INSTALL  \
+  '/tmp/RtmpaXqOXP/devtools7dd71b01a6bb/tidyverse-tidyverse-a720dcd'  \
+  --library='/zfs/users/asda12/asda12/R/x86_64-redhat-linux-gnu-library/3.5'  \
+  --install-tests 
+
+ERROR: dependencies ‘rvest’, ‘xml2’ are not available for package ‘tidyverse’
+* removing ‘/zfs/users/asda12/asda12/R/x86_64-redhat-linux-gnu-library/3.5/tidyverse’
+Installation failed: Command failed (1)
+Error in library(tidyverse) : there is no package called ‘tidyverse’
+Execution halted
+
+Attaching package: ‘dplyr’
+
+The following objects are masked from ‘package:stats’:
+
+    filter, lag
+
+The following objects are masked from ‘package:base’:
+
+    intersect, setdiff, setequal, union
+
+              date description housing_type lat location long price title
+1 2018-06-13 08:37                    1br -  NA            NA            
+2 2018-06-11 08:02                   1210ft  NA            NA            
+3 2018-06-12 14:59                    2br -  NA            NA            
+4 2018-06-07 14:03                   1000ft  NA            NA            
+5 2018-06-12 08:01                    1br -  NA            NA            
+6 2018-06-11 16:32                    3br -  NA            NA            
+                                                   url
+1 https://vancouver.craigslist.ca/search/rds/apa?s=120
+2 https://vancouver.craigslist.ca/search/rds/roo?s=120
+3 https://vancouver.craigslist.ca/search/rds/apa?s=240
+4 https://vancouver.craigslist.ca/search/rds/roo?s=240
+5 https://vancouver.craigslist.ca/search/rds/apa?s=360
+6 https://vancouver.craigslist.ca/search/rds/apa?s=480
+
+Attaching package: ‘dplyr’
+
+The following objects are masked from ‘package:stats’:
+
+    filter, lag
+
+The following objects are masked from ‘package:base’:
+
+    intersect, setdiff, setequal, union
+
+Error in stringdistmatrix(tempt$strings, tempt$strings) : 
+  object 'tempt' not found
+Execution halted
+
+Attaching package: ‘dplyr’
+
+The following objects are masked from ‘package:stats’:
+
+    filter, lag
+
+The following objects are masked from ‘package:base’:
+
+    intersect, setdiff, setequal, union
+
+Time difference of 0.5538056 secs
+Error in str_c(c("a", NA, "b"), "-d") : could not find function "str_c"
+Execution halted
+
+Attaching package: ‘dplyr’
+
+The following objects are masked from ‘package:stats’:
+
+    filter, lag
+
+The following objects are masked from ‘package:base’:
+
+    intersect, setdiff, setequal, union
+
+Time difference of 0.51951 secs
+Error in str_c(c("a", NA, "b"), "-d") : could not find function "str_c"
+Execution halted
+
+Attaching package: ‘dplyr’
+
+The following objects are masked from ‘package:stats’:
+
+    filter, lag
+
+The following objects are masked from ‘package:base’:
+
+    intersect, setdiff, setequal, union
+
+Error in mutate_impl(.data, dots) : 
+  Evaluation error: object 'temp' not found.
+Calls: %>% ... as.data.frame -> mutate -> mutate.tbl_df -> mutate_impl
+Execution halted
+
+Attaching package: ‘dplyr’
+
+The following objects are masked from ‘package:stats’:
+
+    filter, lag
+
+The following objects are masked from ‘package:base’:
+
+    intersect, setdiff, setequal, union
+
+Error in mutate_impl(.data, dots) : 
+  Evaluation error: object 'temp' not found.
+Calls: %>% ... as.data.frame -> mutate -> mutate.tbl_df -> mutate_impl
+Execution halted
+
+Attaching package: ‘dplyr’
+
+The following objects are masked from ‘package:stats’:
+
+    filter, lag
+
+The following objects are masked from ‘package:base’:
+
+    intersect, setdiff, setequal, union
+
+Error in mutate_impl(.data, dots) : 
+  Evaluation error: object 'temp' not found.
+Calls: %>% ... as.data.frame -> mutate -> mutate.tbl_df -> mutate_impl
+Execution halted
+
+Attaching package: ‘dplyr’
+
+The following objects are masked from ‘package:stats’:
+
+    filter, lag
+
+The following objects are masked from ‘package:base’:
+
+    intersect, setdiff, setequal, union
+

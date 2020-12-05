@@ -1,0 +1,22 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1528919157423.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "1449651659",
+    "id" : "D18D5BE5",
+    "lastKnownWriteTime" : 1528926620,
+    "last_content_update" : 1528926620,
+    "path" : "~/Desktop/DSSG/gitscripper/DSSG-2018_Housing/Rcode/data_cleaning.R",
+    "project_path" : "data_cleaning.R",
+    "properties" : {
+        "cursorPosition" : "3,32",
+        "scrollLine" : "0"
+    },
+    "relative_order" : 1,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}
